@@ -1,6 +1,6 @@
 import express from 'express';
 const router = express.Router();
-import users from '../data/users.js';
+import { users } from '../data/index.js';
 
 // Get users
 router.get('/', (req, res) => {
