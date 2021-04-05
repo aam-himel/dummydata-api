@@ -1,0 +1,7 @@
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(to right top, #ffecfd, #fceefd, #faeffc, #f8f1fb, #f6f2f9, #f6f1f8, #f5f1f7, #f5f0f6, #f6ecf5, #f9e9f3, #fce5ef, #ffe1ea);
+}
+

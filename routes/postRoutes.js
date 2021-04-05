@@ -11,4 +11,16 @@ router.get('/:id', (req, res) => {
   res.json(post);
 });
 
+router.delete('/:id', (req, res) => {
+  const newPosts = posts.filter((p) => p._id !== req.params.id);
+  res.json(newPosts);
+});
+
+router.patch('/:id', (req, res) => {
+  let post = posts.find((p) => req.params.id === p._id);
+  let newPost = { ...post, title: req.body.title };
+  console.log(req.body);
+  res.json(newPost);
+});
+
 export default router;
